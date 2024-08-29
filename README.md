@@ -24,10 +24,6 @@ The application provides the following API endpoints:
 * `PUT /todos/:id`: Updates a single todo by ID
 * `DELETE /todos/:id`: Deletes a single todo by ID
 
-## License
-
-This application is licensed under the ISC License.
-
 ## Author
 
 Gabriell Maia
