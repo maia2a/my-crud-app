@@ -14,7 +14,7 @@ export const createTodo = (req: Request, res: Response) => {
   };
 
   todos.push(newTodo);
-  res.status(201).json;
+  res.status(201).json(newTodo);
 };
 
 export const updateTodo = (req: Request, res: Response) => {
@@ -26,7 +26,8 @@ export const updateTodo = (req: Request, res: Response) => {
     return res.status(404).json({ message: "Todo not found" });
   }
 
-  Object.assign(todo, { title, completed });
+  todo.title = title;
+  todo.completed = completed;
 
   res.json(todo);
 };
